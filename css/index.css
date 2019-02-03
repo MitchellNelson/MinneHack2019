@@ -140,7 +140,8 @@ td{
   background-color: grey;
 }
 .data-header{
-	font-weight:normal;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 #meta-data{
@@ -153,6 +154,7 @@ td{
 #growth{
 	padding-top:30px;
 }
+
 
 
 .snapshot-card{
@@ -187,4 +189,4 @@ td{
   	padding:10px;
   	padding-left: 0;
   	font-size: 1.5em;
-}
+  }

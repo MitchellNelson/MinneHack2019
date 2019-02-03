@@ -46,7 +46,7 @@ $(document).ready(() => {
 
 function makeNewSnapshotTemplate(date) {
     var card = contentTemplate.clone();
-    card.find(".snapshot-date").text("Date: " + date);
+    card.find(".snapshot-date").text("Date: " + new Date(date).toDateString());
     console.log("Returning card:");
     console.log(card);
     return card;

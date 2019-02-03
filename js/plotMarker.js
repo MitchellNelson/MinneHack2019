@@ -15,4 +15,13 @@ function onPlotMarkerClick(){
     console.log('onPlotMarkerClick id: ' + this.id);
     console.log(this);
     $("#overlay").show();
+    //var plotInfo = getPlotInfo(this.id);
+    //setOverlayInfoFromPlotInfo(plotInfo);
+    var plotInfo = {
+        id: 1000,
+        crop: "corn",
+        owner: "Bob",
+    }
+    document.getElementById("overlay-crop").innerHTML = plotInfo.crop;
+    document.getElementById("overlay-owner").innerHTML = plotInfo.owner;
 }

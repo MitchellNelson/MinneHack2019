@@ -4,5 +4,13 @@ function getGetParam(name) {
 }
 
 $(document).ready(() => {
-    console.log(getGetParam("p"));
+    var plotID = getGetParam("p");
+    initFarmData();
+
+    var plot = getPlot(+plotID);
+
+    if(plot === null) {
+        console.error("Invalid plot ID: " + plotID);
+    }
+    // TODO: Display farm data
 });

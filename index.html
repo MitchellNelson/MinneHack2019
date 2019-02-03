@@ -17,19 +17,21 @@
     <div id="overlay">
       <div id="overlayFront">
         <div>
-          <span class="static-farmer">Farmer: </span>
+          <span class="static-name">Farmer: </span>
           <span id="overlay-owner"></span>
         </div>
         <div>
-          <span class="static-crop">Crop: </span>
+          <span class="static-name">Crop: </span>
           <span id="overlay-crop"></span>
         </div>
 
         <img id="overlay-image" />
-        <div>
-          <span class="static-names">Data: </span>
-          <span id="overlay-data-weather"></span>
-          <span id="overlay-data-height"></span>
+        <div class="">Weather Data</div>
+        <div id = "meta-data">
+          <div id="overlay-data-weather-temp"></div>
+          <div id="overlay-data-weather-rain"></div>
+          <div id="overlay-data-weather-pressure"></div>
+          <div id="overlay-data-height"></div>
         </div>
         <button id="see-more">See More</button>
         <button id="overlay-button-close" onclick="hideOverlay()">X</button>

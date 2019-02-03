@@ -110,33 +110,46 @@ body {
 }
 
 #see-more {
-  position: absolute;
-  width: 40%;
-  right: 30%;
-  height: 2rem;
-  bottom: 1rem;
-  border: none;
-  background-color: transparent;
-  font-size: 0.7em;
+	position: absolute;
+	width: 40%;
+	right: 30%;
+	height: 2.3rem;
+	bottom: 1rem;
+	border: none;
+	background-color: light-grey;
+	font-size: 0.7em;
 }
 
 td{
-	padding:10px;
+	padding:.5rem;
+	padding-left: 0;
 }
 
+#date-data{
+	position: absolute;
+	left: 53%;
+	top: 1.5rem;
+	border: none;
+	background-color: transparent;
+	font-size: 1.5em;
+	color:#8e5572;
+}
 
 #see-more:hover {
   color: white;
   background-color: grey;
 }
-
-#weather-data{
+.data-header{
 	font-weight:normal;
 }
 
 #meta-data{
 	position: absolute;
-	left:55%;
-  	top:3em;
+	left:53%;
+  	top:3.6em;
   	padding:10px;
+}
+
+#growth{
+	padding-top:30px;
 }

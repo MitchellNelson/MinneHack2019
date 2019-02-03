@@ -77,7 +77,7 @@ function setOverlayFields(plotInfo) {
   for (var i = 0; i < plotInfo.data.length; i++) {
     if ("height" in plotInfo.data[i].data) {
       document.getElementById("overlay-data-height").innerHTML =
-        "Height: " + plotInfo.data[i].data.height;
+      plotInfo.data[i].data.height;
       break;
     }
   }

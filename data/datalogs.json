@@ -1,12 +1,42 @@
 [
     {
         "plot": 1,
-        "date": "2014-03-12T13:37:27+00:00",
+        "date": "2018-06-12T13:37:27+00:00",
         "data": {
             "weather": {
                 "temperature": 62,
                 "rain": 0.01,
-                "pressure": 42
+                "pressure": 31.5
+            },
+
+            "photos": [
+                "photos/1/img_1.png"
+            ]
+        }
+    },
+    {
+        "plot": 1,
+        "date": "2018-06-13T14:15:01+00:00",
+        "data": {
+            "weather": {
+                "temperature": 58,
+                "rain": 0.8,
+                "pressure": 28.75
+            },
+
+            "photos": [
+                "photos/1/img_1.png"
+            ]
+        }
+    },
+    {
+        "plot": 2,
+        "date": "2018-06-12T10:30:04+00:00",
+        "data": {
+            "weather": {
+                "temperature": 60,
+                "rain": 0.02,
+                "pressure": 30.4
             },
 
             "photos": [

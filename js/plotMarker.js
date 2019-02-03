@@ -18,9 +18,9 @@ function onPlotMarkerClick(){
 
     plot = getPlot(this.id);
 
-    var plotInfo = getPlotInfo(this.id);
+    var plotInfo = getPlotInfo(plot);
     setOverlayFields(plotInfo);
-    
+}
 
 function getPlotInfo(plot){
     var plotInfo = {

@@ -26,6 +26,9 @@ function onPlotMarkerClick(){
 
     setOverlayFields(plotInfo);
 
+    $("#see-more").click(()=>{
+        loadSeeMorePage(plot.id);
+    });
     $("#overlay").show();
 }
 
@@ -49,4 +52,8 @@ function setOverlayFields(plotInfo) {
       break;
     }
   }
+}
+
+function loadSeeMorePage(plotId){
+    window.location.assign("plotdata.html?p=" + plotId);
 }

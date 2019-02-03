@@ -57,10 +57,19 @@ function setOverlayFields(plotInfo) {
     if ("weather" in plotInfo.data[i].data) {
       document.getElementById("overlay-data-weather-temp").innerHTML =
         plotInfo.data[i].data.weather.temperature;
-        document.getElementById("overlay-data-weather-rain").innerHTML =
+      document.getElementById("overlay-data-weather-rain").innerHTML =
         plotInfo.data[i].data.weather.rain;
-        document.getElementById("overlay-data-weather-pressure").innerHTML =
+      document.getElementById("overlay-data-weather-pressure").innerHTML =
         plotInfo.data[i].data.weather.pressure;
+      break;
+    }
+  }
+
+  for (var i = 0; i < plotInfo.data.length; i++) {
+    if ("date" in plotInfo.data[i]) {
+      var date = new Date(plotInfo.data[i].date);
+      console.log(date);
+      document.getElementById("date-data").innerHTML = date.toDateString();
       break;
     }
   }

@@ -1,0 +1,17 @@
+[
+    {
+        "plot": 1,
+        "date": "2014-03-12T13:37:27+00:00",
+        "data": {
+            "weather": {
+                "temperature": 62,
+                "rain": 0.01,
+                "pressure": 42
+            },
+
+            "photos": [
+                "photos/1/img_1.png"
+            ]
+        }
+    }
+]

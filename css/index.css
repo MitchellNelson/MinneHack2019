@@ -33,6 +33,7 @@ body {
   color: #b5bd89;
   cursor: pointer;
   text-decoration: none;
+  font-weight: normal;
 }
 .topnav-centered a {
   float: none;
@@ -100,7 +101,8 @@ body {
 
 .static-name{
 	color: #747958;
-	padding:10px
+	padding:10px;
+	font-weight: normal;
 }
 .static-data{
 	color: #537376;
@@ -118,6 +120,9 @@ body {
   font-size: 0.7em;
 }
 
+td{
+	padding:10px;
+}
 
 
 #see-more:hover {

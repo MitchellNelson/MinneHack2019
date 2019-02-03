@@ -17,7 +17,9 @@ $(document).ready(() => {
     }
 
     var ownerName = getOwner(plot.owner).name;
+    $("#overlay-owner").text(ownerName);
     var plantName = getPlant(plot.plant).name;
+    $("#overlay-crop").text(plantName);
     // TODO: Display farm data
     console.log(ownerName);
     console.log(plantName);
@@ -44,11 +46,7 @@ $(document).ready(() => {
 
 function makeNewSnapshotTemplate(date) {
     var card = contentTemplate.clone();
-    var cardDate = card.find(".snapshot-date");
-    var dateField = $("<span/>");
-    dateField.text("Date: " + date);
-    cardDate.append(dateField);
-    card.append(cardDate);
+    card.find(".snapshot-date").text("Date: " + date);
     console.log("Returning card:");
     console.log(card);
     return card;
@@ -63,13 +61,19 @@ function addExistingFieldsToSnapshotCard(card, data){
         card.find(".snapshot-img").append(img);
     }
     if (data.seedsPlanted != null){
-        var seedsPlanted = $("<div/>");
-        seedsPlanted.text(JSON.stringify(data.seedsPlanted));
-        card.find(".snapshot-seeds").append(seedsPlanted);
+        var seedsPlanted = card.find(".snapshot-seeds");
+        console.log("FOUND SEEDS PLANTED");
+        console.log(seedsPlanted);
+        seedsPlanted.find(".plantType").text(data.seedsPlanted.plantType.toString());
+        seedsPlanted.find(".seedName").text(data.seedsPlanted.seedName.toString());
+        seedsPlanted.find(".seedAmount").text(data.seedsPlanted.amount.toString());
+        seedsPlanted.find(".seedAmountUnit").text(data.seedsPlanted.amountUnit.toString());
+        seedsPlanted.find(".area").text(data.seedsPlanted.area.toString());
     }
     if (data.weather != null){
-        var weather = $("<div/>");
-        weather.text(JSON.stringify(data.weather));
-        card.find(".snapshot-weather").append(weather);
+        var weather = card.find(".snapshot-weather");
+        weather.find(".temperature").text(data.weather.temperature);
+        weather.find(".rainfall").text(data.weather.rainfall);
+        weather.find(".pressure").text(data.weather.pressure);
     }
 }

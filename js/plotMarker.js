@@ -26,7 +26,7 @@ function onPlotMarkerClick() {
   setOverlayFields(plotInfo);
 
   $("#see-more").click(() => {
-    loadSeeMorePage(plot.id);
+    loadSeeMorePage(this.id);
   });
   $("#overlay").show();
 }

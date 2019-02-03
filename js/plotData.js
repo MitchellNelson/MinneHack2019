@@ -80,6 +80,10 @@ function addExistingFieldsToSnapshotCard(card, data){
         var height = card.find(".snapshot-height");
         height.find(".height").text(data.height.toString());
     }
+
+    if ("chemicalApplications" in data && data.chemicalApplications.length > 0){
+        addChemicalApplicationsDataToPageContent(card, data.chemicalApplications);
+    }
 }
 
 function getSeedDataFromLogs(logs){
@@ -101,4 +105,21 @@ function addSeedDataToContent(seedsPlanted){
     seedsDiv.find(".seedAmount").text(seedsPlanted.amount.toString()
                                             + seedsPlanted.amountUnit.toString());
     seedsDiv.find(".area").text(seedsPlanted.area.toString());
+}
+
+function addChemicalApplicationsDataToPageContent(card, chemicalApplications){
+    var chemicalRootDiv = card.find(".snapshot-chemicals");
+    var chemicalTemplate = card.find(".chemical-log");
+    // for each "chemical application" log in data
+    for (var i = 0; i < chemicalApplications.length; i++){
+        // create a copy of the template and append to root.
+        var newChemicalLog = chemicalTemplate.clone();
+        chemicalRootDiv.append(newChemicalLog);
+        var chemical = chemicalApplications[i];
+        newChemicalLog.find(".chemicalType").text(chemical.chemicalType);
+        newChemicalLog.find(".chemicalName").text(chemical.chemicalName);
+        newChemicalLog.find(".chemicalAmount").text(chemical.chemicalAmount);
+        newChemicalLog.find(".chemicalUnit").text(chemical.chemicalUnit);
+    }
+    chemicalTemplate.hide();
 }

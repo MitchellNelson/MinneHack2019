@@ -97,8 +97,13 @@ body {
   font-size: 1em;
 }
 
-.static-names {
-  color: blue;
+.static-farmer{
+	color: #747958;
+	padding:10px
+}
+.static-crop{
+	color: #537376;
+	padding:10px
 }
 
 #see-more {

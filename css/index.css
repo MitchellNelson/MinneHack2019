@@ -153,3 +153,38 @@ td{
 #growth{
 	padding-top:30px;
 }
+
+
+.snapshot-card{
+	position: relative;
+	width:60%;
+	height:450px;
+	left: 20%;
+	right: 20%;
+	
+	border:solid;
+}
+
+.snapshot-img{
+	height:300px;
+	width:100px;
+	padding: 50px;
+}
+
+.snapshot-date{
+	position: absolute;
+	left: 53%;
+	
+	border: none;
+	background-color: transparent;
+	font-size: 1.5em;
+	color:#8e5572;
+}
+.snapshot-weather{
+	position: absolute;
+	left:53%;
+  	top:2em;
+  	padding:10px;
+  	padding-left: 0;
+  	font-size: 1.5em;
+}

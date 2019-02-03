@@ -57,8 +57,8 @@ function addExistingFieldsToSnapshotCard(card, data){
     if (data.photos != null && data.photos.length > 0){
         var img = $("<img/>");
         img.attr("src", data.photos[0]);
-        img.width(200);
-        img.height(200);
+        img.width(350);
+        img.height(350);
         card.find(".snapshot-img").append(img);
     }
     if (data.seedsPlanted != null){

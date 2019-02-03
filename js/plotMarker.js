@@ -10,38 +10,26 @@ function makePlotMarker(position, mapId, title, id) {
   return this;
 }
 
-<<<<<<< HEAD
 function onPlotMarkerClick() {
   console.log("onPlotMarkerClick id: " + this.id);
   console.log(this);
-  $("#overlay").show();
 
   plot = getPlot(this.id);
-
   var plotInfo = getPlotInfo(plot);
   setOverlayFields(plotInfo);
-=======
-function onPlotMarkerClick(){
-    console.log('onPlotMarkerClick id: ' + this.id);
-    console.log(this);
 
-    plot = getPlot(this.id);
-    var plotInfo = getPlotInfo(plot);
-    setOverlayFields(plotInfo);
+  // Get all plot logs associated with this plot.
+  var plotLogs = getPlotLogs(plot.id);
+  // Sort the logs from newest to oldest
+  plotLogs.sort((a, b) => {
+    aDate = new Date(a.date);
+    bDate = new Date(b.date);
+    return aDate > bDate ? -1 : 1;
+  });
+  console.log("plot logs sorted");
+  console.log(plotLogs);
 
-    // Get all plot logs associated with this plot.
-    var plotLogs = getPlotLogs(plot.id);
-    // Sort the logs from newest to oldest
-    plotLogs.sort((a,b) => {
-        aDate = new Date(a.date);
-        bDate = new Date(b.date);
-        return aDate > bDate ? -1 : 1;
-    });
-    console.log("plot logs sorted");
-    console.log(plotLogs);
-
-    $("#overlay").show();
->>>>>>> 2b0b4717b13847713e56b739b6bffbf5265b807c
+  $("#overlay").show();
 }
 
 function getPlotInfo(plot) {

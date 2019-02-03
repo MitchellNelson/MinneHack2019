@@ -98,10 +98,6 @@ function getPlotLogs(id) {
     if (datalogs[i].plot === id) {
       logs.push(datalogs[i]);
     }
-<<<<<<< HEAD
   }
   return logs;
-=======
-    return logs;
->>>>>>> 2b0b4717b13847713e56b739b6bffbf5265b807c
 }

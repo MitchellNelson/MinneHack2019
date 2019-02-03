@@ -4,10 +4,10 @@
 
 $(document).ready(function() {
     initFarmData();
-    // TODO: Run through plots and add markers
-    for(var i = 1; i <= plots.length; i++) {
-        console.log(i + ": " + getPlot(i));
-    }
+    
+    plots.forEach(plot => {
+        // TODO: Make marker out of this plot data!
+    });
 });
 
 var owners   = null;
@@ -57,4 +57,23 @@ function getPlot(id) {
         }
     }
     return null;
+}
+
+function getPlant(id) {
+    for(i in plants) {
+        if(plants[i].id === id) {
+            return plants[i];
+        }
+    }
+    return null;
+}
+
+function getPlotLogs(id) {
+    var logs = Array();
+
+    for(i in datalogs) {
+        if(datalogs[i].plot === id) {
+            logs.push(datalogs[i]);
+        }
+    }
 }

@@ -14,8 +14,7 @@ function onPlotMarkerClick() {
   console.log("onPlotMarkerClick id: " + this.id);
   console.log(this);
 
-  plot = getPlot(this.id);
-  var plotInfo = getPlotInfo(plot);
+  var plotInfo = getPlotInfo(this.id);
 
   // Sort the logs from newest to oldest
   plotInfo.data.sort((a, b) => {
@@ -32,12 +31,14 @@ function onPlotMarkerClick() {
   $("#overlay").show();
 }
 
-function getPlotInfo(plot) {
+function getPlotInfo(_plot) {
+  var plot = getPlotObject(_plot);
+
   var plotInfo = {
-    id: plot.id,
-    crop: getPlant(plot.plant).name,
-    owner: getOwner(plot.owner).name,
-    data: getPlotLogs(plot.id)
+    id: plot.getID(),
+    crop: plot.getPlantName(),
+    owner: plot.getOwnerName(),
+    data: getPlotLogs(plot.getID())
   };
   return plotInfo;
 }

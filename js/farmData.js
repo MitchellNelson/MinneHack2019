@@ -3,12 +3,14 @@
  */
 
 function placePlotMarkers() {
-  plots.forEach(plot => {
+  plots.forEach(_plot => {
+    var plot = getPlotObject(_plot.id);
+
     makePlotMarker(
-      { lat: plot.location[0], lng: plot.location[1] },
+      plot.getGoogleMapsLocation(),
       map,
-      "TODO",
-      plot.id
+      "Plot " + plot.getID(),
+      plot.getID()
     );
   });
 }
@@ -61,6 +63,16 @@ function getPlot(id) {
   for (i in plots) {
     if (plots[i].id === id) {
       return plots[i];
+    }
+  }
+  return null;
+}
+
+function getPlotObject(id) {
+  for (i in plots) {
+    // Check to make sure the ID is valid
+    if (plots[i].id === id) {
+      return new Plot(id);
     }
   }
   return null;

@@ -7,6 +7,7 @@ function initMap() {
   var testLocation = { lat: 44.814, lng: -94.95883 };
   var marker = makePlotMarker(testLocation, map, "my marker", 1000);
 
+  initFarmData();
   placePlotMarkers();
 }
 

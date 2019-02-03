@@ -2,10 +2,6 @@
  * farmData.js: Used to grab data from plots.json
  */
 
-/*$(document).ready(function() {
-    initFarmData();
-});*/
-
 function placePlotMarkers() {
   plots.forEach(plot => {
     makePlotMarker(
@@ -27,37 +23,25 @@ function initFarmData() {
 
   $.get(
     "data/owners.json",
-    function(data) {
-      console.log(data);
-      owners = data;
-    },
+    function(data) { owners = data; },
     "json"
   );
 
   $.get(
     "data/plants.json",
-    function(data) {
-      console.log(data);
-      plants = data;
-    },
+    function(data) { plants = data; },
     "json"
   );
 
   $.get(
     "data/plots.json",
-    function(data) {
-      console.log(data);
-      plots = data;
-    },
+    function(data) { plots = data; },
     "json"
   );
 
   $.get(
     "data/datalogs.json",
-    function(data) {
-      console.log(data);
-      datalogs = data;
-    },
+    function(data) { datalogs = data; },
     "json"
   );
 

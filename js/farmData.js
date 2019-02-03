@@ -85,3 +85,14 @@ function getPlotLogs(id) {
   }
   return logs;
 }
+
+function getOwnerLogs(id) {
+  var logs = Array();
+
+  for (i in datalogs) {
+    if (datalogs[i].owner === id) {
+      logs.push(datalogs[i]);
+    }
+  }
+  return logs;
+}

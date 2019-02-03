@@ -68,5 +68,18 @@
 
       "photos": ["images/soybeans.jpg"]
     }
+  },
+  {
+    "plot": 3,
+    "date": "2018-06-18T10:30:04+00:00",
+    "data": {
+      "weather": {
+        "temperature": 70,
+        "rain": 0.57,
+        "pressure": 34.4
+      },
+
+      "photos": ["images/soybeans.jpg"]
+    }
   }
 ]

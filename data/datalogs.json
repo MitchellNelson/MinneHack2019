@@ -26,7 +26,9 @@
         },
         {
           "chemicalType": "Pesticide",
-          "chemicalName": "Monsanto Roundup"
+          "chemicalName": "Monsanto Roundup",
+          "chemicalAmount": 150,
+          "chemicalUnit": "lbs"
         }
       ],
       "photos": ["images/soybeans_young.jpg"]
@@ -103,7 +105,9 @@
         },
         {
           "chemicalType": "Pesticide",
-          "chemicalName": "Monsanto Roundup"
+          "chemicalName": "Monsanto Roundup",
+          "chemicalAmount": 150,
+          "chemicalUnit": "lbs"
         }
       ],
 
@@ -177,7 +181,9 @@
         },
         {
           "chemicalType": "Pesticide",
-          "chemicalName": "Monsanto Roundup"
+          "chemicalName": "Monsanto Roundup",
+          "chemicalAmount": 150,
+          "chemicalUnit": "lbs"
         }
       ],
 

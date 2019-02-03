@@ -3,6 +3,12 @@
     "plot": 1,
     "date": "2018-06-06T16:22:56+00:00",
     "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+      
       "seedsPlanted": {
         "plantType": 2,
         "seedName": "DEKALB DKC35-88RIB Blend",
@@ -18,6 +24,12 @@
     "plot": 1,
     "date": "2018-06-11T16:22:56+00:00",
     "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
       "chemicalApplications": [
         {
           "chemicalType": "Fertilizer",
@@ -83,6 +95,12 @@
     "plot": 2,
     "date": "2018-06-01T16:22:56+00:00",
     "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
       "seedsPlanted": {
         "plantType": 1,
         "seedName": "KRUGER K4R-9296 BRAND BLEND ",
@@ -103,6 +121,7 @@
         "rain": 0.02,
         "pressure": 30.4
       },
+
       "chemicalApplications": [
         {
           "chemicalType": "Fertilizer",
@@ -169,6 +188,12 @@
     "plot": 3,
     "date": "2018-06-18T10:30:04+00:00",
     "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
       "seedsPlanted": {
         "plantType": 1,
         "seedName": "JUNG 5855 BRAND ",
@@ -184,6 +209,12 @@
     "plot": 3,
     "date": "2018-06-18T10:30:04+00:00",
     "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
       "chemicalApplications": [
         {
           "chemicalType": "Fertilizer",
@@ -246,6 +277,12 @@
     "plot": 4,
     "date": "2018-06-06T16:22:56+00:00",
     "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
       "seedsPlanted": {
         "plantType": 3,
         "seedName": "West Bred WB9653",
@@ -261,6 +298,12 @@
     "plot": 4,
     "date": "2018-06-11T16:22:56+00:00",
     "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
       "chemicalApplications": [
         {
           "chemicalType": "Fertilizer",
@@ -326,6 +369,12 @@
     "plot": 5,
     "date": "2018-06-06T16:22:56+00:00",
     "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
       "seedsPlanted": {
         "plantType": 1,
         "seedName": "DEKALB DKC51-38RIB",
@@ -341,6 +390,12 @@
     "plot": 5,
     "date": "2018-06-11T16:22:56+00:00",
     "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
       "chemicalApplications": [
         {
           "chemicalType": "Fertilizer",
@@ -406,6 +461,12 @@
     "plot": 6,
     "date": "2018-06-06T16:22:56+00:00",
     "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
       "seedsPlanted": {
         "plantType": 4,
         "seedName": "Pinto Gold Seed Potatoes",
@@ -421,6 +482,12 @@
     "plot": 6,
     "date": "2018-06-11T16:22:56+00:00",
     "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
       "chemicalApplications": [
         {
           "chemicalType": "Fertilizer",

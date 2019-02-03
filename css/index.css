@@ -140,7 +140,8 @@ td {
   background-color: grey;
 }
 .data-header {
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 #meta-data {
@@ -186,4 +187,11 @@ td {
   text-decoration: none;
   font-weight: normal;
   padding-right: 0%;
+}
+#growth {
+  padding-top: 30px;
+}
+
+.data-label {
+  color: #3a3a3a;
 }

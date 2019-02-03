@@ -160,7 +160,6 @@ td {
   color: #b5bd89;
   text-decoration: none;
   font-weight: normal;
-  float: left;
 }
 
 #add-log-input {
@@ -169,7 +168,6 @@ td {
   padding-left: 10px;
   font-weight: normal;
   line-height: 40pt;
-  float: left;
 }
 
 #add-log-input-data {
@@ -177,7 +175,6 @@ td {
   color: #9ba07d;
   padding-left: 10px;
   font-weight: normal;
-  float: left;
 }
 
 #farm-connect-title {
@@ -196,36 +193,36 @@ td {
   color: #3a3a3a;
 }
 
-.snapshot-card{
-	position: relative;
-	width:60%;
-	height:450px;
-	left: 20%;
-	right: 20%;
-	
-	border:solid;
+.snapshot-card {
+  position: relative;
+  width: 60%;
+  height: 450px;
+  left: 20%;
+  right: 20%;
+
+  border: solid;
 }
 
-.snapshot-img img{
-	height:150px;
-	width:150px;
-	padding: 50px;
+.snapshot-img img {
+  height: 150px;
+  width: 150px;
+  padding: 50px;
 }
 
-.snapshot-date{
-	position: absolute;
-	left: 53%;
-	
-	border: none;
-	background-color: transparent;
-	font-size: 1.5em;
-	color:#8e5572;
+.snapshot-date {
+  position: absolute;
+  left: 53%;
+
+  border: none;
+  background-color: transparent;
+  font-size: 1.5em;
+  color: #8e5572;
 }
-.snapshot-weather{
-	position: absolute;
-	left:53%;
-  	top:2em;
-  	padding:10px;
-  	padding-left: 0;
-  	font-size: 1.5em;
-  }
+.snapshot-weather {
+  position: absolute;
+  left: 53%;
+  top: 2em;
+  padding: 10px;
+  padding-left: 0;
+  font-size: 1.5em;
+}

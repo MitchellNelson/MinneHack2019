@@ -160,7 +160,6 @@ td {
   color: #b5bd89;
   text-decoration: none;
   font-weight: normal;
-  float: left;
 }
 
 #add-log-input {
@@ -169,7 +168,6 @@ td {
   padding-left: 10px;
   font-weight: normal;
   line-height: 40pt;
-  float: left;
 }
 
 #add-log-input-data {
@@ -177,7 +175,6 @@ td {
   color: #9ba07d;
   padding-left: 10px;
   font-weight: normal;
-  float: left;
 }
 
 #farm-connect-title {
@@ -192,30 +189,31 @@ td {
   padding-top: 30px;
 }
 
+
 .data-label {
   color: #3a3a3a;
 }
 
+
+
 .snapshot-card{
+  	width: 60%;
+  	height: 70%;
 	position: relative;
-	width:60%;
-	height:450px;
 	left: 20%;
 	right: 20%;
-	
 	border:solid;
+	
 }
 
 .snapshot-img img{
-	height:150px;
-	width:150px;
-	padding: 50px;
+  padding: 10px;
+  width: 50%;
 }
 
-.snapshot-date{
+.snapshot-meta .date{
 	position: absolute;
 	left: 53%;
-	
 	border: none;
 	background-color: transparent;
 	font-size: 1.5em;

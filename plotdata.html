@@ -33,19 +33,31 @@
     </div>
 
     <div id="content">
-
       <div class="template snapshot-card" style="display: none">
-        <div class="snapshot-meta">
+        <div class="snapshot-meta ">
           <p class="date"></p>
         </div>
         <div class="snapshot-img"></div>
-        <table>
-          <div class="snapshot-weather">
-            <tr><p class="temperature"></p></tr>
-            <tr><p class="rainfall"></p></tr>
-            <tr><p class="pressure"></p></tr>
-          </div>
-        </table>
+        <div class="snapshot-weather">
+            <div class="data-header">Weather Data</div>
+          <table>  
+            <tr>
+              <td><span class="data-label">Temp: </span></td>
+              <td><span class="temperature"></span></td>
+            </tr>
+
+            <tr>
+              <td><span class="data-label">Rain: </span></td>
+              <td><span class="rainfall"></span></td>
+            </tr>
+            <tr>
+              <td><span class="data-label">Pressure: </span></td>
+              <td><span class="pressure"></span></td>
+            </tr>
+          </table>
+        </div>
+        <span id="overlay-data-height"></span>
+
       </div>
     </div>
    

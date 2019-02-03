@@ -7,9 +7,15 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
-  <body style="background-color:#587479;">
+  <body>
+    <div class="navBar">
+      <div class="topnav-centered">
+        <a id="logo">Farm Connect</a>
+      </div>
+      <a href="https://www.google.com" id="myHistory">My History</a>
+    </div>
     <h1 id="log-entry-title">New Log Entry:</h1>
-    <h1 id="farm-connect-title">Farm Connect</h1>
+    <!-- <h1 id="farm-connect-title">Farm Connect</h1> -->
     <div id="add-log-input">
       <label for="photo-upload">Photo: </label>
       <input type="file" name="photo-upload" /><br />
@@ -45,6 +51,7 @@
           <input
             type="number"
             value="50"
+            min="0"
             name="pressure"
             class="template-weather-pressure"
           />
@@ -52,6 +59,8 @@
           <input
             type="number"
             value="0"
+            min="0"
+            step=".05"
             name="rain"
             class="template-weather-rain"
           />
@@ -73,6 +82,7 @@
           <input
             type="number"
             value="50"
+            step="1"
             name="chem-amount"
             class="template-chemical-amount"
           />
@@ -89,13 +99,16 @@
           <input
             type="number"
             value="3"
+            step="0.5"
             name="height"
             class="template-height-height"
           />
         </div>
       </div>
     </div>
-
+    <div id="submit-log-button">
+      <button>Submit Log</button>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/addlog.js"></script>
   </body>

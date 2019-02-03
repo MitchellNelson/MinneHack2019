@@ -1,9 +1,11 @@
 class Plot {
     constructor(id) {
+        var plot = getPlot(id);
+
         this.id       = id;
-        this.owner    = null;
-        this.plant    = null;
-        this.location = null;
+        this.owner    = new Owner(plot.owner);
+        this.plant    = new Plant(plot.plant);
+        this.location = plot.location;
     }
 
     getID() {
@@ -11,11 +13,11 @@ class Plot {
     }
 
     getOwnerName() {
-        return this.owner.name;
+        return this.owner.getName();
     }
 
     getPlantName() {
-        return this.plant.name;
+        return this.plant.getName();
     }
 
     getLocation() {
@@ -25,15 +27,17 @@ class Plot {
     getGoogleMapsLocation() {
         return {
             lat: this.location[0],
-            lon: this.location[1]
+            lng: this.location[1]
         };
     }
 }
 
 class Owner {
     constructor(id) {
+        var owner = getOwner(id);
+
         this.id   = id;
-        this.name = null;
+        this.name = owner.name;
     }
 
     getID() {
@@ -47,7 +51,10 @@ class Owner {
 
 class Plant {
     constructor(id) {
+        var plant = getPlant(id);
 
+        this.id   = id;
+        this.name = plant.name;
     }
 
     getID() {

@@ -21,22 +21,29 @@ body {
 	position: relative;
 	top: 0;
 	left: 0;
-	padding-top:10px;
+	padding-top:20px;
 	padding-bottom:10px;
-	background-color: #36404c;
+	background-color: rgb(125,129,130);
 	width: 100%;
 	/*height: 4rem;*/
 	z-index: 100;
 	display: block;
 	color: white;
-	text-align: center;
+	
 }
 
 #logo {
 	font-size: 3em;
-	color: #B1C8B1;
+	color: #b5bd89;
 	cursor: pointer;
 	text-decoration: none;
+}
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #myHistory:hover {
@@ -46,13 +53,11 @@ body {
 
 #myHistory {
 	background-color: transparent;
-	color: #CCCDA2;
+	color: #dfbe99;
 	outline: none;
-	margin-left: 100px;
-	margin-right: 50px;
 	font-size: 2em;
-	text-align: center;
 	cursor: pointer;
+	margin-left: 10%;
 	text-decoration: none;
 }
 
@@ -99,7 +104,7 @@ body {
 }
 
 .static-names{
-	font-size: 4em;
+	color: blue;
 }
 
 #see-more{

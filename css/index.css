@@ -199,25 +199,23 @@ td {
 
 
 .snapshot-card{
+  	width: 60%;
+  	height: 70%;
 	position: relative;
-	width:60%;
-	height:450px;
 	left: 20%;
 	right: 20%;
-	
 	border:solid;
+	font-size: 1.1em;
 }
 
 .snapshot-img img{
-	height:150px;
-	width:150px;
-	padding: 50px;
+  padding: 10px;
+  max-width: 50%;
 }
 
-.snapshot-date{
+.snapshot-meta .date{
 	position: absolute;
 	left: 53%;
-	
 	border: none;
 	background-color: transparent;
 	font-size: 1.5em;

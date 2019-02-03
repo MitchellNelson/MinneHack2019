@@ -62,18 +62,23 @@ function makeNewSnapshotTemplate(date) {
 }
 
 function addExistingFieldsToSnapshotCard(card, data){
-    if (data.photos != null && data.photos.length > 0){
+    if ("photos" in data && data.photos.length > 0){
         var imgDiv = card.find(".snapshot-img");
         var img = $("<img/>");
         img.attr("src", data.photos[0]);
         imgDiv.append(img);
     }
     
-    if (data.weather != null){
+    if ("weather" in data){
         var weather = card.find(".snapshot-weather");
         weather.find(".temperature").text(data.weather.temperature.toString());
         weather.find(".rainfall").text(data.weather.rain.toString());
         weather.find(".pressure").text(data.weather.pressure.toString());
+    }
+
+    if ("height" in data){
+        var height = card.find(".snapshot-height");
+        height.find(".height").text(data.height.toString());
     }
 }
 

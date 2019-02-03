@@ -104,7 +104,7 @@ function addSeedDataToContent(seedsPlanted){
     seedsDiv.find(".seedName").text(seedsPlanted.seedName.toString());
     seedsDiv.find(".seedAmount").text(seedsPlanted.amount.toString()
                                             + seedsPlanted.amountUnit.toString());
-    seedsDiv.find(".area").text(seedsPlanted.area.toString());
+    seedsDiv.find(".area").text(seedsPlanted.area.toString()+" acres");
 }
 
 function addChemicalApplicationsDataToPageContent(card, chemicalApplications){

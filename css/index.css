@@ -250,7 +250,8 @@ td {
 	left: 20%;
 	right: 20%;
 }
-#growth{
+
+#growth-header{
 	position: absolute;
 	left:53%;
   	top:12rem;

@@ -11,6 +11,16 @@ $(document).ready(() => {
 
     if(plot === null) {
         console.error("Invalid plot ID: " + plotID);
+        return;
     }
+
+    var ownerName = getOwner(plot.owner).name;
+    var plantName = getPlant(plot.plant).name;
     // TODO: Display farm data
+
+    var logs = getPlotLogs(plotID);
+
+    logs.forEach(entry => {
+        // TODO: Display log entry
+    });
 });

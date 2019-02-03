@@ -40,22 +40,24 @@
       <div class="data-form-templates" style="visibility: hidden">
         <div id="template-weather">
           <h3>Weather Conditions:</h3>
-          <label for="temperature">Temperature (F):</label>
+          <label for="temperature">Temperature (&#176;F):</label>
           <input
             type="number"
             value="60"
+            step="0.1"
             name="temperature"
             class="template-weather-temp"
           />
-          <label for="temperature">Pressure (inHg):</label>
+          <label for="pressure">Pressure (inHg):</label>
           <input
             type="number"
             value="50"
             min="0"
+            step="0.1"
             name="pressure"
             class="template-weather-pressure"
           />
-          <label for="temperature">Rainfall (in):</label>
+          <label for="rain">Rainfall (in):</label>
           <input
             type="number"
             value="0"

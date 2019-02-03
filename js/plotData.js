@@ -71,14 +71,14 @@ function addExistingFieldsToSnapshotCard(card, data){
     
     if ("weather" in data){
         var weather = card.find(".snapshot-weather");
-        weather.find(".temperature").text(data.weather.temperature.toString());
-        weather.find(".rainfall").text(data.weather.rain.toString());
-        weather.find(".pressure").text(data.weather.pressure.toString());
+        weather.find(".temperature").text(data.weather.temperature.toString()+ " F");
+        weather.find(".rainfall").text(data.weather.rain.toString()+ " cm");
+        weather.find(".pressure").text(data.weather.pressure.toString() + " imHg");
     }
 
     if ("height" in data){
         var height = card.find(".snapshot-height");
-        height.find(".height").text(data.height.toString());
+        height.find(".height").text(data.height.toString() + " cm");
     }
 
     if ("chemicalApplications" in data && data.chemicalApplications.length > 0){

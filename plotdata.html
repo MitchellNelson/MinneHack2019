@@ -15,12 +15,33 @@
       <a href="https://www.google.com" id="myHistory">My History</a>
     </div>
 
+    <div id="plotInfo">
+      <div>
+        <span class="static-farmer">Farmer: </span>
+        <span id="overlay-owner"></span>
+      </div>
+      <div>
+        <span class="static-crop">Crop: </span>
+        <span id="overlay-crop"></span>
+      </div>
+    </div>
+
     <div id="content">
       <div class="template snapshot-card" style="display: none">
-        <div class="snapshot-date"></div>
+        <p class="snapshot-date"></p>
         <div class="snapshot-img"></div>
-        <div class="snapshot-seeds"></div>
-        <div class="snapshot-weather"></div>
+        <div class="snapshot-seeds">
+          <span class="plantType"></span>
+          <span class="seedName"></span>
+          <span class="seedAmount"></span>
+          <span class="seedAmountUnit"></span>
+          <span class="area"></span>
+        </div>
+        <div class="snapshot-weather">
+          <span class="temperature"></span>
+          <span class="rainfall"></span>
+          <span class="pressure"></span>
+        </div>
       </div>
     </div>
    

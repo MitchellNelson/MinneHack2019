@@ -98,6 +98,10 @@ body {
 	font-size: 1em;
 }
 
+.static-names{
+	font-size: 4em;
+}
+
 #see-more{
 	position: absolute;
 	width:40%;
@@ -109,10 +113,12 @@ body {
 	font-size: .7em;
 }
 
+
 #see-more:hover{
 	color:white;
 	background-color: grey;
 }
+
 
 
 

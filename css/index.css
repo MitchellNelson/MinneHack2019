@@ -63,7 +63,7 @@ body {
   height: 100%; /* Full height (cover the whole page) */
   background-color: rgba(0,0,0,0.75); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+
 }
 
 #overlayFront {
@@ -76,9 +76,46 @@ body {
     bottom: 15%;
     background-color: white; /* Black background with opacity */
     z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
-    font-size: 2vw;
+    font-size: 2em;
     padding:15px; 
+    
 }
+#overlay-image{
+	height: 75%;
+	padding:10px;
+}
+
+#overlay-button-close:hover{
+	color:grey;
+}
+
+#overlay-button-close{
+	position: absolute;
+	right:1rem;
+	top:1rem;
+	border:none;
+	background-color:transparent;
+	font-size: 1em;
+}
+
+#see-more{
+	position: absolute;
+	width:40%;
+	right:30%;
+	height: 3rem;
+	bottom:1rem;
+	border:none;
+	background-color:transparent;
+	font-size: .7em;
+}
+
+#see-more:hover{
+	color:white;
+	background-color: grey;
+}
+
+
+
 
 
 

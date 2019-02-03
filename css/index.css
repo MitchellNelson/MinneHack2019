@@ -160,7 +160,6 @@ td {
   color: #b5bd89;
   text-decoration: none;
   font-weight: normal;
-  float: left;
 }
 
 #add-log-input {
@@ -169,7 +168,6 @@ td {
   padding-left: 10px;
   font-weight: normal;
   line-height: 40pt;
-  float: left;
 }
 
 #add-log-input-data {
@@ -177,7 +175,6 @@ td {
   color: #9ba07d;
   padding-left: 10px;
   font-weight: normal;
-  float: left;
 }
 
 #farm-connect-title {
@@ -196,6 +193,7 @@ td {
 .data-label {
   color: #3a3a3a;
 }
+
 
 
 .snapshot-card{
@@ -229,4 +227,5 @@ td {
   	padding-left: 0;
   	font-size: 1.5em;
   }
+
 

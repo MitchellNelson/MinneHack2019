@@ -7,9 +7,15 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
-  <body style="background-color:#587479;">
+  <body>
+    <div class="navBar">
+      <div class="topnav-centered">
+        <a id="logo">Farm Connect</a>
+      </div>
+      <a href="https://www.google.com" id="myHistory">My History</a>
+    </div>
     <h1 id="log-entry-title">New Log Entry:</h1>
-    <h1 id="farm-connect-title">Farm Connect</h1>
+    <!-- <h1 id="farm-connect-title">Farm Connect</h1> -->
     <div id="add-log-input">
       <label for="photo-upload">Photo: </label>
       <input type="file" name="photo-upload" /><br />
@@ -95,7 +101,9 @@
         </div>
       </div>
     </div>
-
+    <div id="submit-log-button">
+      <button>Submit Log</button>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/addlog.js"></script>
   </body>

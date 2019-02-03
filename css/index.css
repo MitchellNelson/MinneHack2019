@@ -14,8 +14,9 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Sunflower", sans-serif;
-		font-weight: lighter;
+	font-weight: lighter;
 }
+
 .navBar {
 	position: relative;
 	top: 0;
@@ -35,7 +36,6 @@ body {
 	color: #B1C8B1;
 	cursor: pointer;
 	text-decoration: none;
-
 }
 
 #myHistory:hover {
@@ -55,6 +55,20 @@ body {
 	text-align: center;
 	cursor: pointer;
 	text-decoration: none;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  /*display: none;  Hidden by default */
+  width: 70%; /* Full width (cover the whole page) */
+  height: 70%; /* Full height (cover the whole page) */
+  top: 15%; 
+  left: 15%;
+  right: 15%;
+  bottom: 15%;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }
 
 

@@ -30,12 +30,32 @@
 
 
         <img id="overlay-image" />
-        <div class="">Weather Data</div>
+      
         <div id = "meta-data">
-          <div id="overlay-data-weather-temp"></div>
-          <div id="overlay-data-weather-rain"></div>
-          <div id="overlay-data-weather-pressure"></div>
-          <div id="overlay-data-height"></div>
+
+          <div id="weather-data">Weather Data</div>
+            
+          <table>
+            
+            <tr>
+              <td><div>Temp: </div></td>
+              <td><div id="overlay-data-weather-temp"></div></td>
+            </tr>
+            <tr>
+              <td><div></div>Rain: </td>
+              <td><div id="overlay-data-weather-rain"></div></td>
+            </tr>
+            <tr>
+              <td><div>Pressure: </div></td>
+              <td><div id="overlay-data-weather-pressure"></div></td>
+            </tr>
+            <tr>
+              <td><div>Height: </div></td>
+              <td><div id="overlay-data-height"></div></td>
+            </tr>
+            </tr>
+          </table>
+
         </div>
         <button id="see-more">See More</button>
         <button id="overlay-button-close" onclick="hideOverlay()">X</button>

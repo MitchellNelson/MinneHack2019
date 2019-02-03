@@ -118,9 +118,15 @@ body {
   font-size: 0.7em;
 }
 
+
+
 #see-more:hover {
   color: white;
   background-color: grey;
+}
+
+#weather-data{
+	font-weight:normal;
 }
 
 #meta-data{

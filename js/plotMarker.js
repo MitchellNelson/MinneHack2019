@@ -56,12 +56,10 @@ function setOverlayFields(plotInfo) {
   for (var i = 0; i < plotInfo.data.length; i++) {
     if ("weather" in plotInfo.data[i].data) {
       document.getElementById("overlay-data-weather-temp").innerHTML =
-        "Temperature: " +
         plotInfo.data[i].data.weather.temperature;
-        document.getElementById("overlay-data-weather-rain").innerHTML =" Rain: " +
+        document.getElementById("overlay-data-weather-rain").innerHTML =
         plotInfo.data[i].data.weather.rain;
         document.getElementById("overlay-data-weather-pressure").innerHTML =
-        " Pressure: " +
         plotInfo.data[i].data.weather.pressure;
       break;
     }

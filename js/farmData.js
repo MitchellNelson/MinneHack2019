@@ -4,11 +4,16 @@
 
 $(document).ready(function() {
     initFarmData();
-    
-    plots.forEach(plot => {
-        // TODO: Make marker out of this plot data!
-    });
 });
+
+function placePlotMarkers() {
+    plots.forEach(plot => {
+        makePlotMarker(
+            { lat: plot.location[0],
+              lng: plot.location[1] },
+            map, "TODO", plot.id);
+    });
+}
 
 var owners   = null;
 var plants   = null;

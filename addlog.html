@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Farm Connect - Add Log</title>
+
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <body>
+    <h1>New Log Entry:</h1>
+    
+    <label for="photo-upload">Photo: </label>
+    <input type="file" name="photo-upload"/><br/>
+
+    <!-- TODO: Add static elements here -->
+    <label for="plot-name">Plot:</label>
+    <select name="plot-name">
+      <option>North-East Field</option>
+      <option>Southern Field</option>
+    </select>
+    
+    <br/><br/>
+
+    <select id="add_data_select">
+      <option value="template-weather">Weather</option>
+      <option value="template-chemical">Chemical Application</option>
+      <option value="template-height">Plant Height</option>
+    </select>
+    <button id="add_data_button">Add</button>
+
+    <div id="data-items">
+
+    </div>
+
+    <div class="data-form-templates" style="visibility: hidden">
+      <div id="template-weather">
+        <h3>Weather Conditions:</h3>
+        <label for="temperature">Temperature (F):</label>
+        <input type="number" value="60" name="temperature" class="template-weather-temp"/>
+        <label for="temperature">Pressure (inHg):</label>
+        <input type="number" value="50" name="pressure" class="template-weather-pressure"/>
+        <label for="temperature">Rainfall (in):</label>
+        <input type="number" value="0" name="rain" class="template-weather-rain"/>
+      </div>
+      <div id="template-chemical">
+        <h3>Chemical Application:</h3>
+
+        <label for="chem-type">Type:</label>
+        <select name="chem-type" class="template-chemical-type">
+          <option>Pesticide</option>
+          <option>Herbicide</option>
+          <option>Fertilizer</option>
+        </select>
+
+        <label for="chem-name">Name:</label>
+        <input type="text" name="chem-name" class="template-chemical-name"/>
+
+        <label for="chem-amount">Name:</label>
+        <input type="number" value="50" name="chem-amount" class="template-chemical-amount"/>
+
+        <label for="chem-amount-unit">Type:</label>
+        <select name="chem-amount-unit" class="template-chemical-amount-unit">
+          <option>pounds</option>
+          <option>gallons</option>
+        </select>
+      </div>
+      <div id="template-height">
+        <h3>Height:</h3>
+        <label for="height">Height (cm):</label>
+        <input type="number" value="3" name="height" class="template-height-height"/>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/addlog.js"></script>
+  </body>
+</html>

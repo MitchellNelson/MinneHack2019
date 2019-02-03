@@ -81,4 +81,5 @@ function getPlotLogs(id) {
             logs.push(datalogs[i]);
         }
     }
+    return logs;
 }

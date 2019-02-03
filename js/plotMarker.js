@@ -14,12 +14,23 @@ function makePlotMarker(position, mapId, title, id){
 function onPlotMarkerClick(){
     console.log('onPlotMarkerClick id: ' + this.id);
     console.log(this);
-    $("#overlay").show();
 
     plot = getPlot(this.id);
-
     var plotInfo = getPlotInfo(plot);
     setOverlayFields(plotInfo);
+
+    // Get all plot logs associated with this plot.
+    var plotLogs = getPlotLogs(plot.id);
+    // Sort the logs from newest to oldest
+    plotLogs.sort((a,b) => {
+        aDate = new Date(a.date);
+        bDate = new Date(b.date);
+        return aDate > bDate ? -1 : 1;
+    });
+    console.log("plot logs sorted");
+    console.log(plotLogs);
+
+    $("#overlay").show();
 }
 
 function getPlotInfo(plot){

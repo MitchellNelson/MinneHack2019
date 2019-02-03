@@ -34,6 +34,7 @@ $(document).ready(() => {
     logs.forEach(entry => {
         // TODO: Display log entry
         console.log("calling new snapshot with " + entry.date);
+        console.log(entry);
         var newCard = makeNewSnapshotTemplate(entry.date)
         newCard.show();
         console.log("attempting to append card...");
@@ -64,16 +65,16 @@ function addExistingFieldsToSnapshotCard(card, data){
         var seedsPlanted = card.find(".snapshot-seeds");
         console.log("FOUND SEEDS PLANTED");
         console.log(seedsPlanted);
-        seedsPlanted.find(".plantType").text(data.seedsPlanted.plantType.toString());
-        seedsPlanted.find(".seedName").text(data.seedsPlanted.seedName.toString());
-        seedsPlanted.find(".seedAmount").text(data.seedsPlanted.amount.toString());
-        seedsPlanted.find(".seedAmountUnit").text(data.seedsPlanted.amountUnit.toString());
-        seedsPlanted.find(".area").text(data.seedsPlanted.area.toString());
+        seedsPlanted.find(".plantType").text("Crop: " + data.seedsPlanted.plantType.toString());
+        seedsPlanted.find(".seedName").text("Seed: " + data.seedsPlanted.seedName.toString());
+        seedsPlanted.find(".seedAmount").text("Amount: " + data.seedsPlanted.amount.toString()
+                                                + data.seedsPlanted.amountUnit.toString());
+        seedsPlanted.find(".area").text("Area: " + data.seedsPlanted.area.toString());
     }
     if (data.weather != null){
         var weather = card.find(".snapshot-weather");
-        weather.find(".temperature").text(data.weather.temperature);
-        weather.find(".rainfall").text(data.weather.rainfall);
-        weather.find(".pressure").text(data.weather.pressure);
+        weather.find(".temperature").text("Temperature: " + data.weather.temperature.toString() + "F");
+        weather.find(".rainfall").text("Rainfall: " + data.weather.rain.toString() + " inches");
+        weather.find(".pressure").text("Pressure: " + data.weather.pressure.toString() + " inHg");
     }
 }

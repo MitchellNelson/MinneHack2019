@@ -2,9 +2,9 @@
  * farmData.js: Used to grab data from plots.json
  */
 
-$(document).ready(function() {
+/*$(document).ready(function() {
     initFarmData();
-});
+});*/
 
 function placePlotMarkers() {
     plots.forEach(plot => {

@@ -42,9 +42,11 @@ function getPlotInfo(plot) {
 function setOverlayFields(plotInfo) {
   document.getElementById("overlay-crop").innerHTML = plotInfo.crop;
   document.getElementById("overlay-owner").innerHTML = plotInfo.owner;
-  //console.log(plotInfo.data);
-  console.log(plotInfo.data[0].data.photos[0]);
-  document.getElementById("overlay-image").src =
-    plotInfo.data[0].data.photos[0];
-  //imageDiv.appendChild(plotInfo.data[plotInfo.data.length - 1].data.photos[0]);
+  
+  for(var i = 0; i < plotInfo.data.length; i++) {
+    if("photos" in plotInfo.data[i].data) {
+      document.getElementById("overlay-image").src = plotInfo.data[i].data.photos[0];
+      break;
+    }
+  }
 }

@@ -1,6 +1,37 @@
 [
     {
         "plot": 1,
+        "date": "2018-06-06T16:22:56+00:00",
+        "data": {
+            "seedsPlanted": {
+                "plantType": 1,
+                "seedName": "DEKLAB DKC35-88RIB Blend",
+                "amount": 200,
+                "amountUnit": "lbs",
+                "area": 40
+            }
+        }
+    },
+    {
+        "plot": 1,
+        "date": "2018-06-11T16:22:56+00:00",
+        "data": {
+            "chemicalApplications": [
+                {
+                    "chemicalType": "Fertilizer",
+                    "chemicalName": "16-16-8",
+                    "chemicalAmount": 350,
+                    "chemicalUnit": "lbs"
+                },
+                {
+                    "chemicalType": "Pesticide",
+                    "chemicalName": "Monsanto Roundup"
+                }
+            ]
+        }
+    },
+    {
+        "plot": 1,
         "date": "2018-06-12T13:37:27+00:00",
         "data": {
             "weather": {

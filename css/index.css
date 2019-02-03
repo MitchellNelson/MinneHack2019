@@ -189,40 +189,43 @@ td {
   padding-top: 30px;
 }
 
+
 .data-label {
   color: #3a3a3a;
 }
 
-.snapshot-card {
-  position: relative;
-  width: 60%;
-  height: 450px;
-  left: 20%;
-  right: 20%;
 
-  border: solid;
+
+.snapshot-card{
+  	width: 60%;
+  	height: 70%;
+	position: relative;
+	left: 20%;
+	right: 20%;
+	border:solid;
+	font-size: 1.1em;
 }
 
-.snapshot-img img {
-  height: 150px;
-  width: 150px;
-  padding: 50px;
-}
-
-.snapshot-date {
-  position: absolute;
-  left: 53%;
-
-  border: none;
-  background-color: transparent;
-  font-size: 1.5em;
-  color: #8e5572;
-}
-.snapshot-weather {
-  position: absolute;
-  left: 53%;
-  top: 2em;
+.snapshot-img img{
   padding: 10px;
-  padding-left: 0;
-  font-size: 1.5em;
+  max-width: 50%;
 }
+
+.snapshot-meta .date{
+	position: absolute;
+	left: 53%;
+	border: none;
+	background-color: transparent;
+	font-size: 1.5em;
+	color:#8e5572;
+}
+.snapshot-weather{
+	position: absolute;
+	left:53%;
+  	top:2em;
+  	padding:10px;
+  	padding-left: 0;
+  	font-size: 1.5em;
+  }
+
+

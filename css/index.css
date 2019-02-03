@@ -215,6 +215,8 @@ td {
 	position: absolute;
 	left: 53%;
 	border: none;
+	font-weight: normal;
+	top:0;
 	background-color: transparent;
 	font-size: 1.5em;
 	color:#8e5572;
@@ -227,6 +229,7 @@ td {
   	padding-left: 0;
   	font-size: 1.5em;
   }
+  
 .snapshot-seeds{
   position: absolute;
   left:53%;
@@ -234,4 +237,13 @@ td {
     padding:10px;
     padding-left: 0;
     font-size: 1.5em;
-  }
+}
+
+#plotInfo{
+	padding:10px;
+	font-size: 1.5em;
+  	width: 60%;
+	position: relative;
+	left: 20%;
+	right: 20%;
+}

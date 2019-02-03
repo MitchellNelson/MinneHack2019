@@ -99,8 +99,8 @@ function getSeedDataFromLogs(logs){
 
 function addSeedDataToContent(seedsPlanted){
     var seedsDiv = $("#seeds");
-    console.log()
-    seedsDiv.find(".plantType").text(seedsPlanted.plantType.toString());
+    console.log("Tried to find seedsDiv:")
+    console.log(seedsDiv);
     seedsDiv.find(".seedName").text(seedsPlanted.seedName.toString());
     seedsDiv.find(".seedAmount").text(seedsPlanted.amount.toString()
                                             + seedsPlanted.amountUnit.toString());

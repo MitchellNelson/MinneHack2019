@@ -9,23 +9,54 @@
   </head>
   <body>
     <div class="navBar">
-       <div class="topnav-centered">
+      <div class="topnav-centered">
         <a id="logo">Farm Connect</a>
       </div>
       <a href="https://www.google.com" id="myHistory">My History</a>
     </div>
     <div id="overlay">
       <div id="overlayFront">
-        <div>
-          <span class="static-farmer">Farmer: </span>
-          <span id="overlay-owner"></span>
-        </div>
-        <div>
-          <span class="static-crop">Crop: </span>
-          <span id="overlay-crop"></span>
-        </div>
+
+        <table>
+          <tr>
+            <td><span class="static-name">Farmer: </span></td>
+            <td><span id="overlay-owner"></span></td>
+          </tr>
+          <tr>
+            <td><span class="static-name">Crop: </span></td>
+            <td><span id="overlay-crop"></span></td>
+          </tr>
+        </table>
+
 
         <img id="overlay-image" />
+      
+        <div id = "meta-data">
+
+          <div id="weather-data">Weather Data</div>
+            
+          <table>
+            
+            <tr>
+              <td><div>Temp: </div></td>
+              <td><div id="overlay-data-weather-temp"></div></td>
+            </tr>
+            <tr>
+              <td><div></div>Rain: </td>
+              <td><div id="overlay-data-weather-rain"></div></td>
+            </tr>
+            <tr>
+              <td><div>Pressure: </div></td>
+              <td><div id="overlay-data-weather-pressure"></div></td>
+            </tr>
+            <tr>
+              <td><div>Height: </div></td>
+              <td><div id="overlay-data-height"></div></td>
+            </tr>
+            </tr>
+          </table>
+
+        </div>
         <button id="see-more">See More</button>
         <button id="overlay-button-close" onclick="hideOverlay()">X</button>
       </div>

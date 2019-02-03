@@ -10,7 +10,8 @@
         "amountUnit": "lbs",
         "area": 40
       },
-      "photos": ["images/empty_field.jpg"]
+      "photos": ["images/empty_field.jpg"],
+      "height": 0
     }
   },
   {
@@ -31,7 +32,8 @@
           "chemicalUnit": "lbs"
         }
       ],
-      "photos": ["images/soybeans_young.jpg"]
+      "photos": ["images/soybeans_young.jpg"],
+      "height": 10
     }
   },
   {
@@ -44,7 +46,8 @@
         "pressure": 31.5
       },
 
-      "photos": ["images/soybeans_moderate.jpg"]
+      "photos": ["images/soybeans_moderate.jpg"],
+      "height": 29
     }
   },
   {
@@ -57,7 +60,8 @@
         "pressure": 28.75
       },
 
-      "photos": ["images/soybeans_mature.jpg"]
+      "photos": ["images/soybeans_mature.jpg"],
+      "height": 41
     }
   },
   {
@@ -70,7 +74,8 @@
         "pressure": 28.75
       },
 
-      "photos": ["images/soybeans_harvest.jpg"]
+      "photos": ["images/soybeans_harvest.jpg"],
+      "height": 45
     }
   },
   {
@@ -84,7 +89,8 @@
         "amountUnit": "lbs",
         "area": 40
       },
-      "photos": ["images/empty_field1.jpg"]
+      "photos": ["images/empty_field1.jpg"],
+      "height": 0
     }
   },
   {
@@ -111,7 +117,8 @@
         }
       ],
 
-      "photos": ["images/corn_young.jpg"]
+      "photos": ["images/corn_young.jpg"],
+      "height": 54
     }
   },
   {
@@ -124,7 +131,8 @@
         "pressure": 28.75
       },
 
-      "photos": ["images/corn_young-moderate.jpg"]
+      "photos": ["images/corn_young-moderate.jpg"],
+      "height": 135
     }
   },
   {
@@ -137,7 +145,8 @@
         "pressure": 28.75
       },
 
-      "photos": ["images/corn_mature.jpg"]
+      "photos": ["images/corn_mature.jpg"],
+      "height": 245
     }
   },
   {
@@ -150,7 +159,8 @@
         "pressure": 28.75
       },
 
-      "photos": ["images/corn_harvest.jpg"]
+      "photos": ["images/corn_harvest.jpg"],
+      "height": 356
     }
   },
   {

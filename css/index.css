@@ -208,9 +208,9 @@ td {
 	border:solid;
 }
 
-.snapshot-img{
-	height:300px;
-	width:100px;
+.snapshot-img img{
+	height:150px;
+	width:150px;
 	padding: 50px;
 }
 

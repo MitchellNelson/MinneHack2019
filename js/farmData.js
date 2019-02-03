@@ -4,6 +4,7 @@
 
 $(document).ready(function() {
     initFarmData();
+    // TODO: Run through plots and add markers
 });
 
 var owners = null;
@@ -11,6 +12,8 @@ var plants = null;
 var plots  = null;
 
 function initFarmData() {
+    jQuery.ajaxSetup({async:false});
+
     $.get('data/owners.json', function(data) {
         console.log(data);
         owners = data;
@@ -25,6 +28,8 @@ function initFarmData() {
         console.log(data);
         plots = data;
     }, "json");
+
+    jQuery.ajaxSetup({async:true});
 }
 
 function getOwner(id) {

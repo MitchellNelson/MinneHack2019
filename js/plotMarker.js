@@ -12,6 +12,7 @@ function makePlotMarker(position, mapId, title, id){
 }
 
 function onPlotMarkerClick(){
-    console.log('Plot marker ' + this.id + ' clicked');
+    console.log('onPlotMarkerClick id: ' + this.id);
     console.log(this);
+    $("#overlay").show();
 }

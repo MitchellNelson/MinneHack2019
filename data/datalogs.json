@@ -78,6 +78,7 @@
       "height": 45
     }
   },
+
   {
     "plot": 2,
     "date": "2018-06-01T16:22:56+00:00",
@@ -163,6 +164,7 @@
       "height": 356
     }
   },
+
   {
     "plot": 3,
     "date": "2018-06-18T10:30:04+00:00",
@@ -237,6 +239,246 @@
       },
 
       "photos": ["images/wheat_mature.jpg"]
+    }
+  },
+
+  {
+    "plot": 4,
+    "date": "2018-06-06T16:22:56+00:00",
+    "data": {
+      "seedsPlanted": {
+        "plantType": 3,
+        "seedName": "West Bred WB9653",
+        "amount": 200,
+        "amountUnit": "lbs",
+        "area": 40
+      },
+      "photos": ["images/empty_field.jpg"],
+      "height": 0
+    }
+  },
+  {
+    "plot": 4,
+    "date": "2018-06-11T16:22:56+00:00",
+    "data": {
+      "chemicalApplications": [
+        {
+          "chemicalType": "Fertilizer",
+          "chemicalName": "16-16-8",
+          "chemicalAmount": 350,
+          "chemicalUnit": "lbs"
+        },
+        {
+          "chemicalType": "Pesticide",
+          "chemicalName": "Monsanto Roundup",
+          "chemicalAmount": 150,
+          "chemicalUnit": "lbs"
+        }
+      ],
+      "photos": ["images/soybeans_young.jpg"],
+      "height": 10
+    }
+  },
+  {
+    "plot": 4,
+    "date": "2018-06-12T13:37:27+00:00",
+    "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
+      "photos": ["images/soybeans_moderate.jpg"],
+      "height": 29
+    }
+  },
+  {
+    "plot": 4,
+    "date": "2018-06-25T14:15:01+00:00",
+    "data": {
+      "weather": {
+        "temperature": 58,
+        "rain": 0.8,
+        "pressure": 28.75
+      },
+
+      "photos": ["images/soybeans_mature.jpg"],
+      "height": 41
+    }
+  },
+  {
+    "plot": 4,
+    "date": "2018-07-25T14:15:01+00:00",
+    "data": {
+      "weather": {
+        "temperature": 58,
+        "rain": 0.8,
+        "pressure": 28.75
+      },
+
+      "photos": ["images/soybeans_harvest.jpg"],
+      "height": 45
+    }
+  },
+
+  {
+    "plot": 5,
+    "date": "2018-06-06T16:22:56+00:00",
+    "data": {
+      "seedsPlanted": {
+        "plantType": 1,
+        "seedName": "DEKALB DKC51-38RIB",
+        "amount": 200,
+        "amountUnit": "lbs",
+        "area": 40
+      },
+      "photos": ["images/empty_field.jpg"],
+      "height": 0
+    }
+  },
+  {
+    "plot": 5,
+    "date": "2018-06-11T16:22:56+00:00",
+    "data": {
+      "chemicalApplications": [
+        {
+          "chemicalType": "Fertilizer",
+          "chemicalName": "16-16-8",
+          "chemicalAmount": 350,
+          "chemicalUnit": "lbs"
+        },
+        {
+          "chemicalType": "Pesticide",
+          "chemicalName": "Monsanto Roundup",
+          "chemicalAmount": 150,
+          "chemicalUnit": "lbs"
+        }
+      ],
+      "photos": ["images/soybeans_young.jpg"],
+      "height": 10
+    }
+  },
+  {
+    "plot": 5,
+    "date": "2018-06-12T13:37:27+00:00",
+    "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
+      "photos": ["images/soybeans_moderate.jpg"],
+      "height": 29
+    }
+  },
+  {
+    "plot": 5,
+    "date": "2018-06-25T14:15:01+00:00",
+    "data": {
+      "weather": {
+        "temperature": 58,
+        "rain": 0.8,
+        "pressure": 28.75
+      },
+
+      "photos": ["images/soybeans_mature.jpg"],
+      "height": 41
+    }
+  },
+  {
+    "plot": 5,
+    "date": "2018-07-25T14:15:01+00:00",
+    "data": {
+      "weather": {
+        "temperature": 58,
+        "rain": 0.8,
+        "pressure": 28.75
+      },
+
+      "photos": ["images/soybeans_harvest.jpg"],
+      "height": 45
+    }
+  },
+
+  {
+    "plot": 6,
+    "date": "2018-06-06T16:22:56+00:00",
+    "data": {
+      "seedsPlanted": {
+        "plantType": 4,
+        "seedName": "Pinto Gold Seed Potatoes",
+        "amount": 200,
+        "amountUnit": "lbs",
+        "area": 40
+      },
+      "photos": ["images/empty_field.jpg"],
+      "height": 0
+    }
+  },
+  {
+    "plot": 6,
+    "date": "2018-06-11T16:22:56+00:00",
+    "data": {
+      "chemicalApplications": [
+        {
+          "chemicalType": "Fertilizer",
+          "chemicalName": "16-16-8",
+          "chemicalAmount": 350,
+          "chemicalUnit": "lbs"
+        },
+        {
+          "chemicalType": "Pesticide",
+          "chemicalName": "Monsanto Roundup",
+          "chemicalAmount": 150,
+          "chemicalUnit": "lbs"
+        }
+      ],
+      "photos": ["images/soybeans_young.jpg"],
+      "height": 10
+    }
+  },
+  {
+    "plot": 6,
+    "date": "2018-06-12T13:37:27+00:00",
+    "data": {
+      "weather": {
+        "temperature": 62,
+        "rain": 0.01,
+        "pressure": 31.5
+      },
+
+      "photos": ["images/soybeans_moderate.jpg"],
+      "height": 29
+    }
+  },
+  {
+    "plot": 6,
+    "date": "2018-06-25T14:15:01+00:00",
+    "data": {
+      "weather": {
+        "temperature": 58,
+        "rain": 0.8,
+        "pressure": 28.75
+      },
+
+      "photos": ["images/soybeans_mature.jpg"],
+      "height": 41
+    }
+  },
+  {
+    "plot": 6,
+    "date": "2018-07-25T14:15:01+00:00",
+    "data": {
+      "weather": {
+        "temperature": 58,
+        "rain": 0.8,
+        "pressure": 28.75
+      },
+
+      "photos": ["images/soybeans_harvest.jpg"],
+      "height": 45
     }
   }
 ]

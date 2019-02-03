@@ -30,6 +30,13 @@ $(document).ready(() => {
         return new Date(a.date) > new Date(b.date) ? -1 : 1;
     });
 
+    var seedsPlanted = getSeedDataFromLogs(logs);
+    console.log("seeds:");
+    console.log(seedsPlanted);
+    if (seedsPlanted != null){
+        addSeedDataToContent(seedsPlanted);
+    }
+
     // Do stuff for each plot log
     logs.forEach(entry => {
         // TODO: Display log entry
@@ -61,18 +68,32 @@ function addExistingFieldsToSnapshotCard(card, data){
         img.attr("src", data.photos[0]);
         imgDiv.append(img);
     }
-    if (data.seedsPlanted != null){
-        var seedsPlanted = card.find(".snapshot-seeds");
-        seedsPlanted.find(".plantType").text(data.seedsPlanted.plantType.toString());
-        seedsPlanted.find(".seedName").text(data.seedsPlanted.seedName.toString());
-        seedsPlanted.find(".seedAmount").text(data.seedsPlanted.amount.toString()
-                                                + data.seedsPlanted.amountUnit.toString());
-        seedsPlanted.find(".area").text(data.seedsPlanted.area.toString());
-    }
+    
     if (data.weather != null){
         var weather = card.find(".snapshot-weather");
         weather.find(".temperature").text(data.weather.temperature.toString());
         weather.find(".rainfall").text(data.weather.rain.toString());
         weather.find(".pressure").text(data.weather.pressure.toString());
     }
+}
+
+function getSeedDataFromLogs(logs){
+    var log;
+    for (var i = 0; i < logs.length; i++){
+        log = logs[i].data;
+        if (log.seedsPlanted != null){
+            return log.seedsPlanted;
+        }
+    }
+    return null;
+}
+
+function addSeedDataToContent(seedsPlanted){
+    var seedsDiv = $("#seeds");
+    console.log()
+    seedsDiv.find(".plantType").text(seedsPlanted.plantType.toString());
+    seedsDiv.find(".seedName").text(seedsPlanted.seedName.toString());
+    seedsDiv.find(".seedAmount").text(seedsPlanted.amount.toString()
+                                            + seedsPlanted.amountUnit.toString());
+    seedsDiv.find(".area").text(seedsPlanted.area.toString());
 }

@@ -18,13 +18,20 @@ function onPlotMarkerClick(){
 
     plot = getPlot(this.id);
 
-    //var plotInfo = getPlotInfo(this.id);
-    //setOverlayInfoFromPlotInfo(plotInfo);
+    var plotInfo = getPlotInfo(this.id);
+    setOverlayFields(plotInfo);
+    
+
+function getPlotInfo(plot){
     var plotInfo = {
-        id: this.id,
+        id: plot.id,
         crop: getPlant(plot.plant).name,
         owner: getOwner(plot.owner).name,
     }
+    return plotInfo;
+}
+
+function setOverlayFields(plotInfo){
     document.getElementById("overlay-crop").innerHTML = plotInfo.crop;
     document.getElementById("overlay-owner").innerHTML = plotInfo.owner;
 }

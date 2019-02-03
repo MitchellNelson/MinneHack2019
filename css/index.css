@@ -99,63 +99,136 @@ body {
   font-size: 1em;
 }
 
-.static-name{
-	color: #747958;
-	padding:10px;
-	font-weight: normal;
+.static-name {
+  color: #747958;
+  padding: 10px;
+  font-weight: normal;
 }
-.static-data{
-	color: #537376;
-	padding:10px
+.static-data {
+  color: #537376;
+  padding: 10px;
 }
 
 #see-more {
-	position: absolute;
-	width: 40%;
-	right: 30%;
-	height: 2.3rem;
-	bottom: 1rem;
-	border: none;
-	background-color: light-grey;
-	font-size: 0.7em;
+  position: absolute;
+  width: 40%;
+  right: 30%;
+  height: 2.3rem;
+  bottom: 1rem;
+  border: none;
+  background-color: light-grey;
+  font-size: 0.7em;
 }
 
-td{
-	padding:.5rem;
-	padding-left: 0;
+td {
+  padding: 0.5rem;
+  padding-left: 0;
 }
 
-#date-data{
-	position: absolute;
-	left: 53%;
-	top: 1.5rem;
-	border: none;
-	background-color: transparent;
-	font-size: 1.5em;
-	color:#8e5572;
+#date-data {
+  position: absolute;
+  left: 53%;
+  top: 1.5rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5em;
+  color: #8e5572;
 }
 
 #see-more:hover {
   color: white;
   background-color: grey;
 }
-.data-header{
+.data-header {
   font-weight: bold;
   font-size: 1em;
 }
 
-#meta-data{
-	position: absolute;
-	left:53%;
-  	top:3.6em;
-  	padding:10px;
+#meta-data {
+  position: absolute;
+  left: 53%;
+  top: 3.6em;
+  padding: 10px;
 }
 
-#growth{
-	padding-top:30px;
+#growth {
+  padding-top: 30px;
 }
 
+#log-entry-title {
+  font-size: 3em;
+  color: #b5bd89;
+  text-decoration: none;
+  font-weight: normal;
+  float: left;
+}
 
+#add-log-input {
+  font-size: 2em;
+  color: #9ba07d;
+  padding-left: 10px;
+  font-weight: normal;
+  line-height: 40pt;
+  float: left;
+}
+
+#add-log-input-data {
+  font-size: 1.5em;
+  color: #9ba07d;
+  padding-left: 10px;
+  font-weight: normal;
+  float: left;
+}
+
+#farm-connect-title {
+  float: right;
+  font-size: 6em;
+  color: #9ba07d;
+  text-decoration: none;
+  font-weight: normal;
+  padding-right: 0%;
+}
+#growth {
+  padding-top: 30px;
+}
+
+<<<<<<< HEAD
 .data-label {
   color: #3a3a3a;
 }
+=======
+
+.snapshot-card{
+	position: relative;
+	width:60%;
+	height:450px;
+	left: 20%;
+	right: 20%;
+	
+	border:solid;
+}
+
+.snapshot-img{
+	height:300px;
+	width:100px;
+	padding: 50px;
+}
+
+.snapshot-date{
+	position: absolute;
+	left: 53%;
+	
+	border: none;
+	background-color: transparent;
+	font-size: 1.5em;
+	color:#8e5572;
+}
+.snapshot-weather{
+	position: absolute;
+	left:53%;
+  	top:2em;
+  	padding:10px;
+  	padding-left: 0;
+  	font-size: 1.5em;
+  }
+>>>>>>> f9ba71ba61b0ce8185d156ea566a61e62e4f2cbc

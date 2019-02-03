@@ -32,7 +32,7 @@ body {
 
 #logo {
 	
-	font-size: 60px;
+	font-size: 3vw;
 	color: #B1C8B1;
 	cursor: pointer;
 	text-decoration: none;
@@ -44,14 +44,13 @@ body {
 }
 
 #myHistory {
-	width: 30%;
-	height: 48px;
-	background-color: #36404c;
+	
+	background-color: transparent;
 	color: #CCCDA2;
 	outline: none;
 	margin-left: 100px;
 	margin-right: 50px;
-	font-size: 38px;
+	font-size: 2vw;
 	text-align: center;
 	cursor: pointer;
 	text-decoration: none;

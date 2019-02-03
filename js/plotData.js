@@ -36,7 +36,7 @@ $(document).ready(() => {
         newCard.show();
         console.log("attempting to append card...");
         console.log(newCard);
-        //addExistingFieldsToSnapshotCard(newCard, entry.data);
+        addExistingFieldsToSnapshotCard(newCard, entry.data);
         $("#content").append(newCard);
         console.log(entry);
     });
@@ -57,9 +57,19 @@ function makeNewSnapshotTemplate(date) {
 function addExistingFieldsToSnapshotCard(card, data){
     if (data.photos != null && data.photos.length > 0){
         var img = $("<img/>");
-        img.src = data.photos[0];
-        card.append(img);
+        img.attr("src", data.photos[0]);
+        img.width(200);
+        img.height(200);
+        card.find(".snapshot-img").append(img);
     }
     if (data.seedsPlanted != null){
+        var seedsPlanted = $("<div/>");
+        seedsPlanted.text(JSON.stringify(data.seedsPlanted));
+        card.find(".snapshot-seeds").append(seedsPlanted);
+    }
+    if (data.weather != null){
+        var weather = $("<div/>");
+        weather.text(JSON.stringify(data.weather));
+        card.find(".snapshot-weather").append(weather);
     }
 }

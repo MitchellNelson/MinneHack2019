@@ -202,8 +202,11 @@ td {
 	position: relative;
 	left: 20%;
 	right: 20%;
-	border:solid;
-	
+	border: 2px solid;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-color:grey;
 }
 
 .snapshot-img img{
@@ -224,19 +227,19 @@ td {
 .snapshot-weather{
 	position: absolute;
 	left:53%;
-  	top:2em;
-  	padding:10px;
+  	top:3rem;
+  	padding:5px;
   	padding-left: 0;
-  	font-size: 1.5em;
+  	font-size: 1.1em;
   }
   
 .snapshot-seeds{
-  position: absolute;
-  left:53%;
-    top:2em;
-    padding:10px;
-    padding-left: 0;
-    font-size: 1.5em;
+	position: absolute;
+	left:53%;
+	top:2em;
+	padding:10px;
+	padding-left: 0;
+	font-size: 1.5em;
 }
 
 #plotInfo{
@@ -247,3 +250,20 @@ td {
 	left: 20%;
 	right: 20%;
 }
+#growth{
+	position: absolute;
+	left:53%;
+  	top:12rem;
+  	padding:5px;
+  	padding-left: 0;
+  	font-size: 1.1em;
+}
+.snapshot-height{
+	position: absolute;
+	left:53%;
+  	top:14rem;
+  	padding:5px;
+  	padding-left: 0;
+  	font-size: 1.1em;
+}
+

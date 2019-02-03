@@ -203,12 +203,12 @@ td {
 	left: 20%;
 	right: 20%;
 	border:solid;
-	font-size: 1.1em;
+	
 }
 
 .snapshot-img img{
   padding: 10px;
-  max-width: 50%;
+  width: 50%;
 }
 
 .snapshot-meta .date{

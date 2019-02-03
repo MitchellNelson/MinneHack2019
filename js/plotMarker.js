@@ -10,26 +10,26 @@ function makePlotMarker(position, mapId, title, id) {
   return this;
 }
 
-function onPlotMarkerClick(){
-    console.log('onPlotMarkerClick id: ' + this.id);
-    console.log(this);
+function onPlotMarkerClick() {
+  console.log("onPlotMarkerClick id: " + this.id);
+  console.log(this);
 
-    plot = getPlot(this.id);
-    var plotInfo = getPlotInfo(plot);
+  plot = getPlot(this.id);
+  var plotInfo = getPlotInfo(plot);
 
-    // Sort the logs from newest to oldest
-    plotInfo.data.sort((a,b) => {
-        aDate = new Date(a.date);
-        bDate = new Date(b.date);
-        return aDate > bDate ? -1 : 1;
-    });
+  // Sort the logs from newest to oldest
+  plotInfo.data.sort((a, b) => {
+    aDate = new Date(a.date);
+    bDate = new Date(b.date);
+    return aDate > bDate ? -1 : 1;
+  });
 
-    setOverlayFields(plotInfo);
+  setOverlayFields(plotInfo);
 
-    $("#see-more").click(()=>{
-        loadSeeMorePage(plot.id);
-    });
-    $("#overlay").show();
+  $("#see-more").click(() => {
+    loadSeeMorePage(plot.id);
+  });
+  $("#overlay").show();
 }
 
 function getPlotInfo(plot) {
@@ -45,15 +45,36 @@ function getPlotInfo(plot) {
 function setOverlayFields(plotInfo) {
   document.getElementById("overlay-crop").innerHTML = plotInfo.crop;
   document.getElementById("overlay-owner").innerHTML = plotInfo.owner;
-  
-  for(var i = 0; i < plotInfo.data.length; i++) {
-    if("photos" in plotInfo.data[i].data) {
-      document.getElementById("overlay-image").src = plotInfo.data[i].data.photos[0];
+
+  for (var i = 0; i < plotInfo.data.length; i++) {
+    if ("photos" in plotInfo.data[i].data) {
+      document.getElementById("overlay-image").src =
+        plotInfo.data[i].data.photos[0];
+      break;
+    }
+  }
+  for (var i = 0; i < plotInfo.data.length; i++) {
+    if ("weather" in plotInfo.data[i].data) {
+      document.getElementById("overlay-data-weather").innerHTML =
+        "Temperature: " +
+        plotInfo.data[i].data.weather.temperature +
+        " Rain: " +
+        plotInfo.data[i].data.weather.rain +
+        " Pressure: " +
+        plotInfo.data[i].data.weather.pressure;
+      break;
+    }
+  }
+
+  for (var i = 0; i < plotInfo.data.length; i++) {
+    if ("height" in plotInfo.data[i].data) {
+      document.getElementById("overlay-data-height").innerHTML =
+        "Height: " + plotInfo.data[i].data.height;
       break;
     }
   }
 }
 
-function loadSeeMorePage(plotId){
-    window.location.assign("plotdata.html?p=" + plotId);
+function loadSeeMorePage(plotId) {
+  window.location.assign("plotdata.html?p=" + plotId);
 }

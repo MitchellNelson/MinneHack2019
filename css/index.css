@@ -1,128 +1,123 @@
-
-
-
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
 #map {
-    height: 93%;
+  height: 93%;
 }
 
 /* Optional: Makes the sample page fill the window. */
 html,
 body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	font-family: "Sunflower", sans-serif;
-	font-weight: lighter;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Sunflower", sans-serif;
+  font-weight: lighter;
 }
 
 .navBar {
-	position: relative;
-	top: 0;
-	left: 0;
-	padding-top:10px;
-	padding-bottom:10px;
-	background-color: #36404c;
-	width: 100%;
-	/*height: 4rem;*/
-	z-index: 100;
-	display: block;
-	color: white;
-	text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: rgb(125, 129, 130);
+  width: 100%;
+  /*height: 4rem;*/
+  z-index: 100;
+  display: block;
+  color: white;
 }
 
 #logo {
-	font-size: 3em;
-	color: #B1C8B1;
-	cursor: pointer;
-	text-decoration: none;
+  font-size: 3em;
+  color: #b5bd89;
+  cursor: pointer;
+  text-decoration: none;
+}
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #myHistory:hover {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 #myHistory {
-	background-color: transparent;
-	color: #CCCDA2;
-	outline: none;
-	margin-left: 100px;
-	margin-right: 50px;
-	font-size: 2em;
-	text-align: center;
-	cursor: pointer;
-	text-decoration: none;
+  background-color: transparent;
+  color: #dfbe99;
+  outline: none;
+  font-size: 2em;
+  cursor: pointer;
+  margin-left: 10%;
+  text-decoration: none;
 }
 
 #overlay {
   position: fixed; /* Sit on top of the page content */
-  display: none;  /* Hidden by default */
+  display: none; /* Hidden by default */
   width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
-  background-color: rgba(0,0,0,0.75); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.75); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-
 }
 
 #overlayFront {
-    position: fixed;
-    width: 70%;
-    height: 70%;
-    top: 15%;
-    left: 15%;
-    right: 15%;
-    bottom: 15%;
-    background-color: white; /* Black background with opacity */
-    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
-    font-size: 2em;
-    padding:15px; 
-    
+  position: fixed;
+  width: 70%;
+  height: 70%;
+  top: 15%;
+  left: 15%;
+  right: 15%;
+  bottom: 15%;
+  background-color: white; /* Black background with opacity */
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+  font-size: 2em;
+  padding: 15px;
 }
-#overlay-image{
-	height: 75%;
-	padding:10px;
-}
-
-#overlay-button-close:hover{
-	color:grey;
+#overlay-image {
+  height: 75%;
+  padding: 10px;
 }
 
-#overlay-button-close{
-	position: absolute;
-	right:1rem;
-	top:1rem;
-	border:none;
-	background-color:transparent;
-	font-size: 1em;
+#overlay-button-close:hover {
+  color: grey;
 }
 
-.static-names{
-	font-size: 4em;
+#overlay-button-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1em;
 }
 
-#see-more{
-	position: absolute;
-	width:40%;
-	right:30%;
-	height: 3rem;
-	bottom:1rem;
-	border:none;
-	background-color:transparent;
-	font-size: .7em;
+.static-farmer{
+	color: #747958;
+	padding:10px
+}
+.static-crop{
+	color: #537376;
+	padding:10px
 }
 
-
-#see-more:hover{
-	color:white;
-	background-color: grey;
+#see-more {
+  position: absolute;
+  width: 40%;
+  right: 30%;
+  height: 2rem;
+  bottom: 1rem;
+  border: none;
+  background-color: transparent;
+  font-size: 0.7em;
 }
 
-
-
-
-
-
-
-
+#see-more:hover {
+  color: white;
+  background-color: grey;
+}
